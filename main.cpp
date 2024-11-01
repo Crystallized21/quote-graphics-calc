@@ -2,6 +2,7 @@
 #include <sstream>
 #include <cmath>
 #include <string>
+#include <algorithm>
 
 void solveQuadratic(const double a, const double b, const double c) {
     if (a == 0) {
