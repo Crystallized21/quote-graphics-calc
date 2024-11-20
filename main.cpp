@@ -10,9 +10,7 @@ void solveQuadratic(const double a, const double b, const double c) {
         return;
     }
 
-    double discriminant = b * b - 4 * a * c;
-
-    if (discriminant > 0) {
+    if (const double discriminant = b * b - 4 * a * c; discriminant > 0) {
         const double root1 = (-b + sqrt(discriminant)) / (2 * a);
         const double root2 = (-b - sqrt(discriminant)) / (2 * a);
         std::cout << "Two real roots: " << root1 << " and " << root2 << std::endl;
