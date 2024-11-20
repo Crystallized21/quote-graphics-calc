@@ -21,8 +21,8 @@ void solveQuadratic(const double a, const double b, const double c) {
         const double realPart = -b / (2 * a);
         const double imaginaryPart = sqrt(-discriminant) / (2 * a);
         std::cout << "Two complex roots: "
-                  << realPart << " + " << imaginaryPart << "i and "
-                  << realPart << " - " << imaginaryPart << "i" << std::endl;
+                << realPart << " + " << imaginaryPart << "i and "
+                << realPart << " - " << imaginaryPart << "i" << std::endl;
     }
 }
 
@@ -31,7 +31,8 @@ int main() {
     std::string input;
 
     while (true) {
-        std::cout << "Enter coefficients a, b, c (comma-separated) or type 'individual' to enter them one by one (or type 'exit' to quit): ";
+        std::cout <<
+                "Enter coefficients a, b, c (comma-separated) or type 'individual' to enter them one by one (or type 'exit' to quit): ";
         std::getline(std::cin, input);
 
         if (input == "exit") {
